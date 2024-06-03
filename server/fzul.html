@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" charset="utf-8"></script>
+  <style media="screen">
+
+.accordions {
+width: 80%;
+margin: 100px auto;
+}
+
+.accordions h3 {
+text-align: center;
+font-family: "Roboto", sans-serif;
+font-weight: bold;
+font-size: 16px;
+}
+
+.accordion-item {
+background-color: #212121;
+margin-bottom: 20px;
+color: #ffffff;
+}
+
+.accordion-item .accordion-title {
+cursor: pointer;
+padding: 15px;
+transition: transform 0.4s ease-in-out;
+}
+
+.accordion-item .accordion-title.active-title {
+background-color: #212121;
+color: #ffffff;
+}
+
+.accordion-item .accordion-title h3 {
+font-weight: 700;
+margin: 0;
+
+display: flex;
+
+font-weight: bold;
+}
+.fa-chevron-down{
+    margin-right: 20px;
+}
+.accordion-item .accordion-title i.fa-chevron-down {
+transform: rotate(270deg);
+transition: 0.4s;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down.chevron-top {
+transform: rotate(360deg);
+color: #ffff;
+}
+
+.accordion-item .accordion-content {
+display: none;
+line-height: 1.7;
+padding: 20px;
+background-color: #ffffff;
+
+color: #100e34;
+}
+
+.accordion-item .accordion-content.active {
+display: block;
+}
+
+.accordion-item .accordion-content p {
+margin: 0;
+font-family: "Nunito Sans", sans-serif;
+font-size: 16px;
+}
+
+
+  </style>
+</head>
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <section id="faq">
+    <div class=" faq">
+
+      <div class="">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="accordions">
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item1">
+                  <h3><i class="fa fa-chevron-down"></i> Why FutureRDP? </h3>
+                </div>
+                <div class="accordion-content" id="item1">
+
+                  <p>
+                    FutureRDP provides cheap and affordable Linux and Windows VPS servers and
+                    storage solution since 2008 for more than 11 years in multiple locations such as
+                    the United States, UK, France, Germany, Netherlands, and Canada. We have a range
+                    of different solutions for different purposes such as SSD VPS and Storage
+                    servers. All servers are equipped with RAID10 only SSD drives and FREE DDoS
+                    Protection!
+                  </p>
+
+
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $(".accordion-title").click(function (e) {
+      var accordionitem = $(this).attr("data-tab");
+      $("#" + accordionitem)
+        .slideToggle()
+        .parent()
+        .siblings()
+        .find(".accordion-content")
+        .slideUp();
+
+      $(this).toggleClass("active-title");
+      $("#" + accordionitem)
+        .parent()
+        .siblings()
+        .find(".accordion-title")
+        .removeClass("active-title");
+
+      $("i.fa-chevron-down", this).toggleClass("chevron-top");
+      $("#" + accordionitem)
+        .parent()
+        .siblings()
+        .find(".accordion-title i.fa-chevron-down")
+        .removeClass("chevron-top");
+    });
+  });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adming Penal - Reeaply</title>
+	<!-- Core css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+      <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+          <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+<!-- Table  -->
+    <link rel="stylesheet" type="text/css" href="css/datatable.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-datatable.css">
+<!-- multi selector -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+</head>
+<body>
+    <!-- Preloader -->
+        <div id="preloader">
+  <img src="img/loader.gif" alt="Preloader" />
+</div>
+<!-- SideNav -->
+<div id="websiteContent" style="display: none;">
+ <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+         <a href="#" class="logo-box">
+            <img src="img/manue.svg" class='toggle-sidebar sidenav_icon'>
+         <div class="logo_area">
+       
+        	<img src="img/loogo.png" class="logo">
+            	
+            </div>
+        </a>
+        <div class="profile_area">
+  <div class="ac_pf">
+                        <span class="pf_name_img">
+                            <img src="img/commenter1.png" class="ac-pf_png" id="profileImage" /> <img src="img/pen_icon.svg" id="change_img" class="pen_icon_pf" />
+                            <input id="imageUpload" type="file" placeholder="Photo" name="profile_img" required="" capture />                  
+         </span>
+     </div>
+        <h5 class="admin_name">EDDELS BETTE</h5>
+        <span class="penal_tag">ADMIN PANEL</span>
+             </div>  
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li>
+                <div class="title">
+                    <a href="index.html" class="link">
+                         <img src="img/unseen_dasboard.svg" class='bx bx-grid-alt dashboard_icon'>
+                        <span class="name">Dashboard</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="index.html" class="link submenu-title">Dashboard</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+
+            <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="featured.html" class="link">
+            <img src="img/featured.svg" class='bx bx-grid-alt'>
+                        <span class="name">Featured</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="featured.html" class="link submenu-title">Featured</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+                        <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="users.html" class="link">
+            <img src="img/user.svg" class='bx bx-grid-alt'>
+                        <span class="name">Users</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="users.html" class="link submenu-title">Users</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title upload_button">
+                    <a href="#" class="link">
+         <img src="img/uploads.svg" class='bx bx-grid-alt'>
+                        <span class="name">Uploads</span>
+                    </a>
+ <img src="img/submenu_down.svg" class='bx bxs-chevron-down'>
+                </div>
+                <div class="submenu upload_sbmanu">
+                    <a href="#" class="link submenu-title">Uploads</a>
+                    <span class="submenu_items">
+                    <img src="img/subdots.svg" class='subdots'>
+                    <a href="movies.html" class="link">Movies</a>
+                    </span>
+                    <span class="submenu_items">
+                    <img src="img/subdots.svg" class='subdots'>
+                    <a href="series.html" class="link">Series</a>
+                </span>
+                <span class="submenu_items">
+                    <img src="img/subdots.svg" class='subdots'>
+                    <a href="skits.html" class="link">Skits</a>
+                </span>
+                <span class="submenu_items">
+                    <img src="img/subdots.svg" class='subdots'>
+                    <a href="music-videos.html" class="link">Music Videos</a>
+                </span>
+                </div>
+            </li>
+                        <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="live.html" class="link">
+            <img src="img/live.svg" class='bx bx-grid-alt'>
+                        <span class="name">Live</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="live.html" class="link submenu-title">Live</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+                          <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="upcoming.html" class="link">
+            <img src="img/upcoming.svg" class='bx bx-grid-alt'>
+                        <span class="name">Upcoming</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="upcoming.html" class="link submenu-title">Upcoming</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li> 
+                           <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="categories.html" class="link">
+            <img src="img/category.svg" class='bx bx-grid-alt'>
+                        <span class="name">Categories</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="categories.html" class="link submenu-title">Categories</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li> 
+            <hr class="side_nav_hr">
+     <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="ad-manager.html" class="link">
+            <img src="img/adds.svg" class='bx bx-grid-alt'>
+                        <span class="name">Ad manager</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="ad-manager.html" class="link submenu-title">Ad manager</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>   
+     <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="plans.html" class="link">
+            <img src="img/plans.svg" class='bx bx-grid-alt'>
+                        <span class="name">Plans /Subs</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="plans.html" class="link submenu-title">Plans /Subs</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li> 
+               <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="gift-cards.html" class="link">
+            <img src="img/gifcard.svg" class='bx bx-grid-alt'>
+                        <span class="name">Giftcards</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="gift-cards.html" class="link submenu-title">Giftcards</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+                          <!-- -------- List Item ------- -->
+ <li class="active">
+                <div class="title">
+                    <a href="clients.html" class="link">
+            <img src="img/seenclients.svg" class='bx bx-grid-alt'>
+                        <span class="name">Clients</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="clients.html" class="link submenu-title">Clients</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+               <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="suggestions.html" class="link">
+            <img src="img/Suggestion.svg" class='bx bx-grid-alt'>
+                        <span class="name">Suggestions</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="suggestions.html" class="link submenu-title">Suggestions</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li> 
+                         <!-- -------- List Item ------- -->
+ <li>
+                <div class="title">
+                    <a href="settings.html" class="link">
+            <img src="img/settings.svg" class='bx bx-grid-alt'>
+                        <span class="name">Settings</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="settings.html" class="link submenu-title">Settings</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>                
+        </ul>
+    </div>
+
+<!-- End SideNav -->
+
+
+
+
+
+
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+   <!-- sm submenu -->
+   <div class="sm_submenu">
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Uploads</a>
+                    <span class="submenu_items">
+                    
+                    <a href="movies.html" class="link">Movies</a>
+                    </span>
+                    <span class="submenu_items">
+                    
+                    <a href="series.html" class="link">Series</a>
+                </span>
+                <span class="submenu_items">
+                    
+                    <a href="skits.html" class="link">Skits</a>
+                </span>
+                <span class="submenu_items">
+                    
+                    <a href="music-videos.html" class="link">Music Videos</a>
+                </span>
+                </div>
+ </div>
+<!-- Top Nav  -->
+<div class="top_nav">
+	<div class="right_side_tonav">
+		<img src="img/notifcation.svg" class="top_notif">
+
+		<img src="img/commenter1.png" class="topnv_pf">	
+		<span class="topnav_name" id="show_tobnav_box">EB <img src="img/down_arrow.svg" class="topnv_down"></span>
+	</div>
+</div>
+<!-- Tob nav box -->
+<div class="topnav_box">
+	<div class="topnav_box_items">
+	<a href="account.html"><img src="img/account.svg" style="margin-top: -3px">&nbsp;Account</a>	
+	<a href="analytics.html"><img src="img/analistic.svg"> Analytics</a>	
+	<a href="#">
+                                <span class="model-44">
+                                    <div class="checkboxx"><input type="checkbox" class="switch_check_input" checked /> <label class="lablefor_checkbox"></label></div></span>
+                                 &nbsp; Light mode</a>	
+	<a href="logout.html"><img src="img/logout.svg">&nbsp; Log out</a>	
+	</div>
+</div>
+
+<!-- =========Page Name Bar====== -->
+<div class="pagename_bar">
+	<h5>Home / Clients</h5>
+</div>
+
+
+<!-- =============================Mian Area==================== -->
+<div class="featured_main_are mt-4">
+ 
+ <!-- search   -->
+<div class="row">
+    <div class="col-lg-8 col-md-8 col-12 f_saerch_area">
+    
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+   
+    </div>
+</div>
+<br><br>
+
+<!-- Mian Area -->
+<div class="live_page_btns">
+<a href="clients.html"><button class="active_live_btn">Clients</button></a>
+<a href="deposits.html"><button>Deposits</button></a>
+<a href="withdrawals.html"><button>Withdrawals</button></a>
+</div>
+<div class="add_chennel_main_area p-0 pt-4">
+<div class="row">
+    <div class="col-lg-10 col-md-10 col-12 f_saerch_area text-center mb-4">
+        <img src="img/search_icon.svg" class="f_search"><input type="text" name="search" id="search" class="live_search_input plans_search_input" placeholder="Search Clients">
+    </div>
+    <div class="col-lg-2 col-md-2 col-12 f_saerch_area">
+</div>
+</div>
+<table id="datatble" class="table table-borderless display responsive nowrap">
+            <thead>
+                <tr class="">
+                    <th>NAME</th>
+                    <th>TITTLE</th>
+                    <th>TYPE</th>
+                    <th>EMAIL</th>
+                    <th>SUB STATUS</th>
+                    <th>SUB STATUS</th>
+                    <th>OPTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr class="table_rows">
+                <td>
+<div class="row">
+<div class="col-lg-3 col-md-4 col-4 p-0">
+    <img src="img/top1.png" class="table_imgs">
+</div>  
+<div class="col-lg-8 col-md-8 col-8 text-left utbl_img_text">
+    <span class="toped_names">Mum’s Soldier</span>
+</div>  
+</div>
+                </td>
+                <td>Arise TV</td>
+                <td>Channel</td>
+                <td>example@gmail.com</td>
+              <td>Active</td>
+              <td>Yes</td>
+              
+                
+                <td><span class="table_icons"> <img src="img/whiteeye.svg" class="edit_table view_user_icon" data-bs-toggle="modal" data-bs-target="#userview"><img src="img/edit_table.svg" class="edit_table"><img src="img/edit_delete.svg" class="delete_table"></span></td>
+
+            </tr>
+            <tr class="table_rows">
+                <td>
+<div class="row">
+<div class="col-lg-3 col-md-4 col-4 p-0">
+    <img src="img/top1.png" class="table_imgs">
+</div>  
+<div class="col-lg-8 col-md-8 col-8 text-left utbl_img_text">
+    <span class="toped_names">Mum’s Soldier</span>
+</div>  
+</div>
+                </td>
+                <td>Davido Live</td>
+                <td>Events</td>
+                <td>example@gmail.com</td>
+              <td>Active</td>
+              <td>Yes</td>
+              
+                
+                <td><span class="table_icons"> <img src="img/whiteeye.svg" class="edit_table view_user_icon" data-bs-toggle="modal" data-bs-target="#userview"><img src="img/edit_table.svg" class="edit_table"><img src="img/edit_delete.svg" class="delete_table"></span></td>
+
+            </tr>
+
+            <tr class="table_rows">
+                <td>
+<div class="row">
+<div class="col-lg-3 col-md-4 col-4 p-0">
+    <img src="img/top1.png" class="table_imgs">
+</div>  
+<div class="col-lg-8 col-md-8 col-8 text-left utbl_img_text">
+    <span class="toped_names">Mum’s Soldier</span>
+</div>  
+</div>
+                </td>
+                <td>Big Broda Naija</td>
+                <td>Tv Show</td>
+                <td>example@gmail.com</td>
+              <td>Active</td>
+              <td>Yes</td>
+              
+                
+                <td><span class="table_icons"> <img src="img/whiteeye.svg" class="edit_table view_user_icon" data-bs-toggle="modal" data-bs-target="#userview"><img src="img/edit_table.svg" class="edit_table"><img src="img/edit_delete.svg" class="delete_table"></span></td>
+
+            </tr>
+
+            <tr class="table_rows">
+                <td>
+<div class="row">
+<div class="col-lg-3 col-md-4 col-4 p-0">
+    <img src="img/top1.png" class="table_imgs">
+</div>  
+<div class="col-lg-8 col-md-8 col-8 text-left utbl_img_text">
+    <span class="toped_names">Mum’s Soldier</span>
+</div>  
+</div>
+                </td>
+                <td>Big Broda Naija</td>
+                <td>Tv Show</td>
+                <td>example@gmail.com</td>
+              <td>Active</td>
+              <td>Yes</td>
+              
+                
+                <td><span class="table_icons"> <img src="img/whiteeye.svg" class="edit_table view_user_icon" data-bs-toggle="modal" data-bs-target="#userview"><img src="img/edit_table.svg" class="edit_table"><img src="img/edit_delete.svg" class="delete_table"></span></td>
+
+            </tr>
+
+            
+</tbody>
+</table>
+
+
+</div>
+
+ 
+<!-- Modal -->
+<div class="modal fade" id="add-plans" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content add_category_modal">
+      <div class="modal-header" style="border-bottom: none;">
+ 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="add_category_modal_body">
+     <label>TITLE *</label> 
+       <input type="text" name="title" class="add_category_inputs">
+
+       <label>DESCRIPTION *</label> 
+    <textarea class="add_category_inputs" rows="3" style="height:auto;"></textarea>
+
+        <label>PRICE *</label> 
+       <input type="text" name="title" class="add_category_inputs">  
+
+      
+
+<button class="f_save_button w-100">Save</button>
+</div>
+      </div>
+     
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="userview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" style="max-width: 681px; max-height: 300px;">
+    <div class="modal-content" style="background: #3A3A39;">
+    <img src="img/Close_button.svg" data-bs-dismiss="modal" aria-label="Close" class="user_view_close_btn">
+      <div class="modal-body">
+     <!-- row -->
+     <div class="row mt-4">
+         <div class="col-lg-6 col-md-6 col-12">
+             <img src="img/news_pop.png" class="user_view_img">
+         </div>
+         <div class="col-lg-6 col-md-6 col-12">
+            <div class="user_view_details">
+             <h3>ARISE NEWS</h3>
+             <p>Email:  Arisenews@gmail.com</p>
+             <p>Phone:  +2347065438762</p>
+             <p>Joined : 12-5-2023</p>
+             <p>Country: Nigeria</p>
+             <p>Total Subs: 3 Months</p>
+             <p>Sub Status: Active</p>
+             <p>Verified: Yes</p>
+</div>
+             <button class="edit_userv_details">Edit</button>
+         </div>
+
+     </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap / Js -->
+ <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+<!-- Table -->
+
+<script type="text/javascript" src="js/datatable.js"></script>
+<script type="text/javascript" src="js/datatablepagination.js"></script>
+<script type="text/javascript" src="js/searchdatatable.js"></script>
+<script>
+$(document).ready(function() {
+                $('#datatble').DataTable();
+
+                $('#search').on('keyup', function() {
+                    $('#datatble').DataTable().search($(this).val()).draw();
+                });
+            });
+</script>
+
+
+
+</body>
+</html>
